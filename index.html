@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <div class="container mt-5 flex-grow-1">
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" id="hm4-tab" data-bs-toggle="tab" href="#hm4">HM4</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="hm5-tab" data-bs-toggle="tab" href="#hm5">HM5</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="hm6-tab" data-bs-toggle="tab" href="#hm6">HM6</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="hm7-tab" data-bs-toggle="tab" href="#hm7">HM7</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="hm8-tab" data-bs-toggle="tab" href="#hm8">HM8</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="hm4">
+        <div class="tab-pane fade show active" id="hm4">
+          <h3>Задачі:</h3>
+          <ul class="list-group">
+            <li class="list-group-item">
+              Дано два різні числа. Визначити, яке з них більше, а яке менше.
+              <div class="row">
+                <div class="form-group col-md-3">
+                  <label for="hm4t1number1">Число 1:</label>
+                  <input type="number" id="hm4t1number1" class="form-control">
+                </div>
+                <div class="form-group col-md-3">
+                  <label for="hm4t1number2">Число 2:</label>
+                  <input type="number" id="hm4t1number2" class="form-control">
+                </div>
+                <button type="button" id="hm4t1button" class="mt-3 btn btn-primary col-md-3">Визначити</button>
+                <div class="form-group col-md-3">
+                  <label for="hm4t1number3">Більше число</label>
+                  <input type="number" id="hm4t1number3" class="form-control">
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              Відомі дві відстані. Одне у кілометрах, інше – у футах (1 фут = 0,305м). Яка відстань менша?
+              <div class="row">
+                <div class="form-group col-md-3">
+                  <label for="hm4t2distance1">Відстань у кілометрах:</label>
+                  <input type="number" id="hm4t2distance1" class="form-control">
+                </div>
+                <div class="form-group col-md-3">
+                  <label for="hm4t2distance2">Відстань у футах:</label>
+                  <input type="number" id="hm4t2distance2" class="form-control">
+                </div>
+                <button type="button" id="hm4t2button" class="mt-3 btn btn-primary col-md-3">Визначити</button>
+                <div class="form-group col-md-3">
+                  <label for="hm4t2result">Менша відстань (в метрах)</label>
+                  <input type="number" id="hm4t2result" class="form-control">
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              Визначити, чи є число a дільником числа b? І навпаки. (Дати дві відповіді)
+              <div class="row">
+                <div class="form-group col-md-3">
+                  <label for="hm4t3number1">Число a:</label>
+                  <input type="number" id="hm4t3number1" class="form-control">
+                </div>
+                <div class="form-group col-md-3">
+                  <label for="hm4t3number2">Число b:</label>
+                  <input type="number" id="hm4t3number2" class="form-control">
+                </div>
+                <button type="button" id="hm4t3button" class="mt-3 btn btn-primary col-md-3">Визначити</button>
+                <div class="form-group col-md-3">
+                  <label for="hm4t3result">Відповідь</label>
+                  <input type="text" id="hm4t3result" class="form-control">
+                </div>
+              </div>
+            </li>
+
+            <li class="list-group-item">
+              Дано число. Визначити, чи закінчується воно парною цифрою чи непарною? Вивести останню цифру.
+              <div class="row">
+                <div class="form-group col-md-4">
+                  <label for="hm4t4number">Число:</label>
+                  <input type="number" id="hm4t4number" class="form-control">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="hm4t4result">Відповідь</label>
+                  <input type="text" id="hm4t4result" class="form-control">
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              Дано двозначне число. Визначити, яка з його цифр більша: перша чи друга?
+              <div class="row">
+                <div class="form-group col-md-4">
+                  <label for="hm4t5number">Двозначне число:</label>
+                  <input type="number" id="hm4t5number" class="form-control">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="hm4t5result">Відповідь</label>
+                  <input type="text" id="hm4t5result" class="form-control">
+                </div>
+              </div>
+            </li>
+
+            <li class="list-group-item">
+              <p>Дано тризначне число.</p>
+              <p> Визначити чи є парною сума його цифр.</p>
+              <p>Визначити, чи кратна сума цифр п'яти.</p>
+              <p>Визначити чи є добуток його цифр більше 100.</p>
+              <p>Чи правда, що всі цифри однакові?</p>
+              <p>Визначити чи є добуток його цифр більше 100.</p>
+
+              <div class="row">
+                <div class="form-group col-md-4">
+                  <label for="hm4t6number">Тризначне число:</label>
+                  <input type="number" id="hm4t6number" class="form-control">
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="form-group col-md-4">
+                  <label for="hm4t6result">Відповідь1</label>
+                  <input type="text" id="hm4t6result" class="form-control">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="hm4t7result">Відповідь2</label>
+                  <input type="text" id="hm4t7result" class="form-control">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="hm4t8result">Відповідь3</label>
+                  <input type="text" id="hm4t8result" class="form-control">
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-5">
+                  <label for="hm4t9result">Відповідь4</label>
+                  <input type="text" id="hm4t9result" class="form-control">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="hm4t10result">Відповідь5</label>
+                  <input type="text" id="hm4t10result" class="form-control">
+                </div>
+              </div>
+            </li>
+
+            <li class="list-group-item">
+              Визначити, чи є задане шестизначне число дзеркальним? (123321, 147741)
+              <div class="row">
+                <div class="form-group col-md-4">
+                  <label for="hm4t11number">Шестизначне число:</label>
+                  <input type="number" id="hm4t11number" class="form-control">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="hm4t11result">Відповідь</label>
+                  <input type="text" id="hm4t11result" class="form-control">
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!--tab hm5-->
+      <div class="tab-pane fade" id="hm5">
+        <h3>Завдання 5</h3>
+        <div class="form-group">
+          <label for="hm5birthYear">Рік народження:</label>
+          <input type="number" id="hm5birthYear" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="hm5city">Місто проживання:</label>
+          <input type="text" id="hm5city" class="form-control">
+        </div>
+        <div class="form-group">
+          <label for="hm5sport">Улюблений вид спорту:</label>
+          <input type="text" id="hm5sport" class="form-control">
+        </div>
+        <button type="button" id="hm5button" class="mt-3 btn btn-primary">Виконати</button>
+        <div id="hm5result"></div>
+      </div>
+
+      <!--tab hm6-->
+      <div class="tab-pane fade" id="hm6">
+        <h3>Task:</h3>
+        <p>Enter a number or string:</p>
+        <div class="form-group">
+          <input type="text" id="hm6input" class="form-control">
+        </div>
+        <button type="button" id="hm6button" class="btn btn-primary">Submit</button>
+      </div>
+      <!--tab hm7-->
+      <div class="tab-pane fade" id="hm7">
+        <h3>Homework 7:</h3>
+        <ul class="list-group">
+
+          <!-- Task 1 -->
+          <li class="list-group-item">
+            <label for="hm7t1result">Вивести на сторінку в один рядок через кому числа від 10 до 20:</label>
+            <textarea id="hm7t1result" class="form-control" rows="1" readonly></textarea>
+          </li>
+
+          <!-- Task 2 -->
+          <li class="list-group-item">
+            <label for="hm7t2result">Вивести квадрати чисел від 10 до 20:</label>
+            <textarea id="hm7t2result" class="form-control" rows="1" readonly></textarea>
+          </li>
+
+          <!-- Task 3 -->
+          <li class="list-group-item">
+            <label for="hm7t3result">Вивести таблицю множення на 7:</label>
+            <textarea id="hm7t3result" class="form-control" rows="10" readonly></textarea>
+          </li>
+
+          <!-- Task 4 -->
+          <li class="list-group-item">
+            <label for="hm7t4result">Знайти суму всіх цілих чисел від 1 до 15:</label>
+            <input type="number" id="hm7t4result" class="form-control" readonly>
+          </li>
+
+          <!-- Task 5 -->
+          <li class="list-group-item">
+            <label for="hm7t5result">Знайти добуток усіх цілих чисел від 15 до 35:</label>
+            <input type="number" id="hm7t5result" class="form-control" readonly>
+          </li>
+
+          <!-- Task 6 -->
+          <li class="list-group-item">
+            <label for="hm7t6result">Знайти середнє арифметичне всіх цілих чисел від 1 до 500:</label>
+            <input type="number" id="hm7t6result" class="form-control" readonly>
+          </li>
+
+          <!-- Task 7 -->
+          <li class="list-group-item">
+            <label for="hm7t7result">Вивести суму лише парних чисел у діапазоні від 30 до 80:</label>
+            <input type="number" id="hm7t7result" class="form-control" readonly>
+          </li>
+
+          <!-- Task 8 -->
+          <li class="list-group-item">
+            <label for="hm7t8result">Вивести всі числа в діапазоні від 100 до 200:</label>
+            <textarea id="hm7t8result" class="form-control" rows="6" readonly></textarea>
+          </li>
+
+          <!-- Task 9 -->
+          <li class="list-group-item">
+            <label for="hm7t9number">Дано натуральне число. Знайти та вивести на сторінку всі його дільники:</label>
+            <input type="number" id="hm7t9number" class="form-control">
+            <button type="button" id="hm7t9button" class="mt-3 btn btn-primary">Рішеня</button>
+            <label for="hm7t9result">Рішеня:</label>
+            <textarea id="hm7t9result" class="form-control" rows="1" readonly></textarea>
+          </li>
+
+          <!-- Task 10 -->
+          <li class="list-group-item">
+            <label for="hm7t10number">Визначити кількість його парних дільників:</label>
+            <input type="number" id="hm7t10number" class="form-control">
+            <button type="button" id="hm7t10button" class="mt-3 btn btn-primary">Рішеня</button>
+            <label for="hm7t10result">Рішеня:</label>
+            <input type="number" id="hm7t10result" class="form-control" readonly>
+          </li>
+
+          <!-- Task 11 -->
+          <li class="list-group-item">
+            <label for="hm7t11number">Знайти суму його парних дільників:</label>
+            <input type="number" id="hm7t11number" class="form-control">
+            <button type="button" id="hm7t11button" class="mt-3 btn btn-primary">Рішеня</button>
+            <label for="hm7t11result">Рішеня:</label>
+            <input type="number" id="hm7t11result" class="form-control" readonly>
+          </li>
+
+          <!-- Task 12 -->
+          <li class="list-group-item">
+            <label for="hm7t12result">Надрукувати повну таблицю множення від 1 до 10:</label>
+            <textarea id="hm7t12result" class="form-control" rows="10" readonly></textarea>
+          </li>
+
+        </ul>
+      </div>
+
+
+      <!--tab hm8-->
+      <div class="tab-pane fade" id="hm8">
+        <h3>Homework 7:</h3>
+        <ul class="list-group">
+
+          <!-- Task 1 -->
+          <li class="list-group-item">
+            <label for="hm8t1result">Вивести числа від 20 до 30 через пропуск використовуючи крок 0,5 (20 20,5 21
+              21,5….):</label>
+            <textarea id="hm8t1result" class="form-control" rows="3" readonly></textarea>
+          </li>
+
+          <!-- Task 2 -->
+          <li class="list-group-item">
+            <label for="hm8t2result">Один долар коштує 40 гривень. Вивести дані з розрахунком вартості 10, 20, 30... 100
+              доларів:</label>
+            <textarea id="hm8t2result" class="form-control" rows="10" readonly></textarea>
+          </li>
+
+          <!-- Task 3 -->
+          <li class="list-group-item">
+            <label for="hm8t3result">Дано ціле число. Вивести всі цілі числа від 1 до 100, квадрат яких не перевищує
+              числа N:</label>
+            <input id="hm8t3input" type="number" class="form-control">
+            <textarea id="hm8t3result" class="form-control mt-2" rows="10" readonly></textarea>
+          </li>
+
+          <!-- Task 4 -->
+          <li class="list-group-item">
+            <label for="hm8t4result">Дано ціле число. З'ясувати, чи воно простим:</label>
+            <input id="hm8t4input" type="number" class="form-control">
+            <button onclick="calculateTask4()" class="btn btn-primary mt-2">Check</button>
+            <textarea id="hm8t4result" class="form-control mt-2" rows="1" readonly></textarea>
+          </li>
+
+          <!-- Task 5 -->
+          <li class="list-group-item">
+            <label for="hm8t5result">Дано кілька. Визначити, чи можна одержати це число шляхом зведення числа 3 деякий
+              ступінь:</label>
+            <input id="hm8t5input" type="number" class="form-control">
+            <textarea id="hm8t5result" class="form-control mt-2" rows="1" readonly></textarea>
+          </li>
+
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer class="bg-light text-center text-lg-start">
+    <div class="container p-4">
+      <h5 class="text">Kostintyn Buriak</h5>
+      <p>Salesforce Developer</p>
+      <p>+380934739023 | buriak.kostiantyn@gmail.com</p>
+      <a href="https://t.me/kostia_b" target="_blank"><i class="fab fa-telegram fa-2x"></i></a>
+      <a href="https://www.linkedin.com/in/kburiak/" target="_blank"><i class="fab fa-linkedin fa-2x ml-3"></i></a>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
