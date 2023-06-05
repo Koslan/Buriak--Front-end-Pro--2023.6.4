@@ -304,7 +304,7 @@ window.onload = function () {
 //tab hm8
 
 
-// Task 3
+// Task 3 Дано ціле число. Вивести всі цілі числа від 1 до 100, квадрат яких не перевищує числа N
 document.getElementById('hm8t3input').addEventListener('input', function (e) {
     e.preventDefault();
     let N = parseFloat(document.getElementById('hm8t3input').value);
@@ -317,7 +317,7 @@ document.getElementById('hm8t3input').addEventListener('input', function (e) {
     document.getElementById('hm8t3result').value = hm8t3result.slice(0, -2);
 });
 
-// Task 4
+// Task 4 Дано ціле число. З'ясувати, чи воно простим (простим називається число, більше ніж 1, які мають інших дільників крім 1 і себе).
 document.getElementById('hm8t4input').addEventListener('input', function (e) {
     e.preventDefault();
     let num = parseFloat(document.getElementById('hm8t4input').value);
@@ -331,13 +331,16 @@ document.getElementById('hm8t4input').addEventListener('input', function (e) {
     document.getElementById('hm8t4result').value = isPrime && num > 1 ? num + ' просте.' : num + ' не просте';
 });
 
-// Task 5
-document.getElementById('hm8t5input').addEventListener('input', function (e) {
+// Task 5 Дано кілька. Визначити, чи можна одержати це число шляхом зведення числа 3 деякий ступінь. (Наприклад, числа 9, 81 можна отримати, а 13 - не можна)
+document.getElementById('hm8t5button').addEventListener('click', function (e) {
     e.preventDefault();
-    let num5 = parseFloat(document.getElementById('hm8t5input').value);
-    let hm8t5result = '';
-    while (num5 % 3 === 0 && num5 > 1) {
-        num5 /= 3;
+    let n1 = parseFloat(document.getElementById('hm8t5_1input').value);
+    let n2 = parseFloat(document.getElementById('hm8t5_2input').value);
+
+
+    while (n2 > 1 && n2 % n1 === 0) {
+        n2 /= n1;
     }
-    document.getElementById('hm8t5result').value = num5 === 1 ? 'Yes, the number can be obtained by raising 3 to some power.' : 'No, the number cannot be obtained by raising 3 to some power.';
+
+    document.getElementById('hm8t5result').value = n2 === 1;
 });
